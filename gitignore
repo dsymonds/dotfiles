@@ -1,0 +1,4 @@
+# vim swap files
+.*.swp
+# Mac junk
+.DS_Store

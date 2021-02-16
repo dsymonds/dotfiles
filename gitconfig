@@ -1,0 +1,34 @@
+[user]
+	name = David Symonds
+	email = dsymonds@gmail.com
+[core]
+	excludesfile = ~/.gitignore
+	attributesfile = ~/.gitattributes
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+[sendemail]
+	smtpServer = smtp.gmail.com
+	smtpEncryption = tls
+	smtpUser = dsymonds@gmail.com
+	smtpServerPort = 587
+[gc]
+	auto = 0
+	autopacklimit = 0
+[merge]
+	ff = only
+[push]
+	default = simple
+[http]
+	cookiefile = ~/.gitcookies
+[mailmap]
+	file = ~/.mailmap
+[pull]
+	ff = only
+[alias]
+	summ = log '--format="format:%C(auto)%h %d [%aL] %s"' "HEAD~10.."
+[fetch]
+	prune = true
+[init]
+	defaultBranch = master
