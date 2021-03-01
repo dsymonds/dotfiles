@@ -4,6 +4,7 @@
 [core]
 	excludesfile = ~/.gitignore
 	attributesfile = ~/.gitattributes
+	preloadindex = true
 [color]
 	diff = auto
 	status = auto
