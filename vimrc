@@ -70,3 +70,9 @@ function! s:GitGrep(pat)
   echo "Found " . len(getqflist()) . " matches."
 endfunction
 command! -nargs=1 GitGrep :call s:GitGrep(<f-args>)
+
+" Use ripgrep as :grep.
+if executable('rg')
+  set grepprg=rg\ --vimgrep\ --hidden
+  set grepformat=%f:%l:%c:%m,%f:%l:%m
+endif
