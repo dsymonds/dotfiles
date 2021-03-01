@@ -31,5 +31,10 @@ fi
 # Shut up about bash deprecation (new as of macOS 10.15 Catalina).
 export BASH_SILENCE_DEPRECATION_WARNING=1
 
-# Homebrew
-eval $(/opt/homebrew/bin/brew shellenv)
+# Homebrew.
+# It might be installed in a couple of different places.
+for loc in /opt/homebrew /usr/local; do
+  if [ -f $loc/bin/brew ]; then
+    eval $($loc/bin/brew shellenv)
+  fi
+done
