@@ -29,6 +29,7 @@
 	ff = only
 [alias]
 	summ = log '--format="format:%C(auto)%h %d [%aL] %s"' "HEAD~10.."
+	ffmaster = fetch . origin/master:master
 [fetch]
 	prune = true
 [init]
