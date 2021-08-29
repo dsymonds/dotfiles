@@ -5,11 +5,11 @@ PATH=$HOME/bin:$PATH
 export EDITOR PATH #MANPATH
 
 # Go stuff
+export PATH="$HOME/go/bin:$PATH"
 #GOROOT=$HOME/src/go
 #GOARCH=amd64
 #GOOS=darwin
 #GOPATH=$HOME/go
-#PATH=$GOROOT/bin:$GOPATH/bin:$PATH
 #export GOROOT GOARCH GOOS GOPATH PATH
 
 # OS X 10.8 does not come with GNU grep.
