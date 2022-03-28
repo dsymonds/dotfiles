@@ -34,3 +34,5 @@
 	prune = true
 [init]
 	defaultBranch = master
+[advice]
+	skippedCherryPicks = false
