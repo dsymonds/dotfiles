@@ -36,5 +36,8 @@ export BASH_SILENCE_DEPRECATION_WARNING=1
 for loc in /opt/homebrew /usr/local; do
   if [ -f $loc/bin/brew ]; then
     eval $($loc/bin/brew shellenv)
+
+    # Override any local sqlite.
+    export PATH="$loc/opt/sqlite/bin:$PATH"
   fi
 done
