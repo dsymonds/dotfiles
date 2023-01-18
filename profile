@@ -39,5 +39,12 @@ for loc in /opt/homebrew /usr/local; do
 
     # Override any local sqlite.
     export PATH="$loc/opt/sqlite/bin:$PATH"
+
+    git=$loc/etc/bash_completion.d/git-completion.bash
+    if [ -f $git ]; then
+      echo 1>&2 -n "Loading git completion from $loc... "
+      source $git
+      echo 1>&2 "done"
+    fi
   fi
 done
