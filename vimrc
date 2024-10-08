@@ -40,6 +40,7 @@ let g:go_play_open_browser = 0
 let g:go_fmt_command = "gofmt"
 :autocmd BufRead,BufNewFile *.go set sw=8 ts=8 noexpandtab
 :autocmd BufRead,BufNewFile *.go.golden set sw=8 ts=8 noexpandtab
+:autocmd BufRead,BufNewFile *.html.tmpl set sw=8 ts=8 noexpandtab
 
 " When editing Go, use "go build" as the makeprg.
 :autocmd BufRead,BufNewFile *.go set makeprg=go\ build
