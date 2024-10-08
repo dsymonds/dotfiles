@@ -5,9 +5,10 @@ cd $(dirname $0)
 
 FILES="
 	gitattributes
-        gitconfig
-        gitignore
-        profile
+	gitconfig
+	gitignore
+	profile
+	sqliterc
 	vimrc
 "
 
