@@ -9,6 +9,7 @@ FILES="
 	gitignore
 	profile
 	sqliterc
+	screenrc
 	vimrc
 "
 
