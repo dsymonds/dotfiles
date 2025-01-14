@@ -21,6 +21,9 @@ set expandtab
 set cinoptions=11,g0.5s,h0.5s,i2s,+2s,(0,W2s
 imap <TAB> <C-V><TAB>
 
+" Keep a good amount of history.
+set history=1000
+
 set nohidden
 
 " https://github.com/numirias/security/blob/master/doc/2019-06-04_ace-vim-neovim.md
