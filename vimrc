@@ -38,9 +38,8 @@ set statusline=%f:%l:%c%m%r%=line\ %l/%L\ %P
 :set nojoinspaces
 
 " Go
-let g:go_disable_autoinstall = 1
 let g:go_play_open_browser = 0
-let g:go_fmt_command = "gofmt"
+let g:go_fmt_command = "goimports"
 :autocmd BufRead,BufNewFile *.go set sw=8 ts=8 noexpandtab
 :autocmd BufRead,BufNewFile *.go.golden set sw=8 ts=8 noexpandtab
 :autocmd BufRead,BufNewFile *.html.tmpl set sw=8 ts=8 noexpandtab
@@ -60,7 +59,7 @@ augroup end
 :autocmd BufRead,BufNewFile *.yaml set sw=2 ts=2 expandtab nolist
 
 " Lint
-exe "set rtp+=" . globpath($GOPATH, "src/github.com/golang/lint/misc/vim")
+"exe "set rtp+=" . globpath($GOPATH, "src/github.com/golang/lint/misc/vim")
 
 runtime ftplugin/man.vim
 
