@@ -36,3 +36,8 @@
 	defaultBranch = master
 [advice]
 	skippedCherryPicks = false
+[branch]
+	sort = -committerdate
+[diff]
+	algorithm = histogram
+	renames = true
