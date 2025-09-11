@@ -1,0 +1,48 @@
+[user]
+	name = David Symonds
+	email = {{ .email }}
+[core]
+	excludesfile = ~/.gitignore
+	attributesfile = ~/.gitattributes
+	preloadindex = true
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+{{- if .personal_machine }}
+[sendemail]
+	smtpServer = smtp.gmail.com
+	smtpEncryption = tls
+	smtpUser = dsymonds@gmail.com
+	smtpServerPort = 587
+{{- end }}
+[gc]
+	auto = 0
+	autopacklimit = 0
+[merge]
+	ff = only
+[push]
+	default = simple
+[http]
+	cookiefile = ~/.gitcookies
+[mailmap]
+	file = ~/.mailmap
+[pull]
+	ff = only
+[alias]
+	summ = log '--format="format:%C(auto)%h %d [%aL] %s"' "HEAD~10.."
+	ffmaster = fetch . origin/master:master
+[fetch]
+	prune = true
+[init]
+	defaultBranch = master
+[advice]
+	skippedCherryPicks = false
+[branch]
+	sort = -committerdate
+[diff]
+	algorithm = histogram
+	renames = true
+{{- if .work_machine }}
+{{ include "../../../.gitconfig_canva" }}
+{{- end -}}

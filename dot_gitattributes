@@ -1,0 +1,4 @@
+*.go	diff=golang
+*.js	diff=javascript
+*.md	diff=markdown
+*.ts	diff=javascript
