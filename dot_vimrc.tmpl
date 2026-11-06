@@ -51,6 +51,9 @@ let g:go_fmt_command = "goimports"
 :autocmd BufRead,BufNewFile *.html.tmpl set sw=2 ts=2 expandtab
 {{ end }}
 
+" Mostly for ~/src/todoist-pebble/src/pkjs
+:autocmd BufRead,BufNewFile *.js set sw=4 ts=4 expandtab
+
 " When editing Go, use "go build" as the makeprg.
 :autocmd BufRead,BufNewFile *.go set makeprg=go\ build
 
